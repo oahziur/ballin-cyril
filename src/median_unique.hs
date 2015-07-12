@@ -1,8 +1,6 @@
 import System.Environment
 import System.IO
 
-import Test.QuickCheck
-
 import qualified Data.Maybe as Maybe
 import qualified Data.Heap as Heap
 import qualified Data.List as List
