@@ -26,6 +26,6 @@ getOutput = unlines . map showEntry
     showEntry (word, count) = word ++ getSeparator word ++ show count
 
 main = do
-  (inputPath:outputPath:args) <- getArgs
+  [inputPath, outputPath] <- getArgs
   input <- readFile inputPath
   writeFile outputPath $ getOutput $ countWords $ words input

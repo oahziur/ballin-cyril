@@ -68,6 +68,6 @@ getOutput :: [Float] -> String
 getOutput = unlines . map show
 
 main = do
-  (inputPath:outputPath:args) <- getArgs
+  [inputPath, outputPath] <- getArgs
   input <- readFile inputPath
   writeFile outputPath $ getOutput $ generateMediansFromInput input
